@@ -8,7 +8,7 @@ To recap, we have a toy signature scheme. The prover has an unsafe, 3 bit privat
 
 See full example signature scheme [here](https://drive.google.com/file/d/1_lKJwZmWef6zpW2VViz5a2OeEfdTa4Uf/view).
 
-For the hash function, we can use `std::hash::pedersen`. See example [here](https://github.com/vezenovm/simple_shield/blob/master/circuits/src/main.nr)
+For the hash function, you can use any of the currently ACIR supported OPCODES. See [here](https://github.com/noir-lang/noir)
 
 ### Suggested Interface
 
@@ -26,7 +26,7 @@ signature
 
 // witness inputs
 priv_key 
-// Note: `priv_key could be an array of `0` and `1` Field elements. A bit redundant when you can just use a Field type, but for the sake of the exercise, let's use an array of bits. 
+// Note: `priv_key could be an array of `0` and `1` Field elements, or some other way to input bit notation in NOIR. Ofc, we can just use a `Field` or `Integer` type. But to adhere to the original example, let's provide the private key in bit notation.
 
 // Think through what else should be a witness input
 
