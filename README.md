@@ -17,24 +17,25 @@ For the hash function, we can use `std::hash::pedersen`. See example [here](http
 Prover.toml
 
 ```
-// public
+// public inputs
 
 pub_key
 message
 signature
-// what else?
+// Think through what else should be a public signal
 
-// witness
-priv_key
-// what else?
+// witness inputs
+priv_key 
+// Note: `priv_key could be an array of `0` and `1` Field elements. A bit redundant when you can just use a Field type, but for the sake of the exercise, let's use an array of bits. 
+
+// Think through what else should be a witness input
 
 ```
 
 Verifier.toml
 
 ```
-// Think through what does the verifier need to know?
-
+// Think through what the verifier needs to know
 ```
 
 ### Bonus
