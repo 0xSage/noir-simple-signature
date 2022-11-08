@@ -18,3 +18,19 @@ this repo to see the apis: https://github.com/noir-lang/noir/tree/master/crates/
 
 4. `unused variable _` error can be stubbed?
 Expected: would be great to port over some of unimplemented! macros from rust into the NOIR devex, i.e. let users stub parts they haven't implemented yet after defining the interface.
+
+5. `error: Expected type (), found type [()]` error thrown when I forgot a `;` at the end of a if block.
+Expected: a better syntax error
+
+6. Is there opcode/syntax to handle exponentiation?
+
+7. Field overflow/underflow error msg confusing: 
+Got: `thread 'main' panicked at 'assertion failed: bit_size < FieldElement::max_num_bits()'`
+Expected: `underflow/overflow...`
+
+8. Print which constraints cannot be satisfied
+Got: `could not satisfy all constraint` maybe intentionally vague? But not great for development process..
+
+9. 
+
+
