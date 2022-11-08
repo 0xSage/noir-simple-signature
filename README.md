@@ -10,6 +10,8 @@ See full example signature scheme [here](https://drive.google.com/file/d/1_lKJwZ
 
 For the hash function, you can use any of the currently ACIR supported OPCODES. See [here](https://github.com/noir-lang/noir)
 
+This is really more of an exercise to checkout NOIR than to learn how to write custom gates... yay.
+
 ### Suggested Interface
 
 > I haven't actually implemented this homework yet, so we may need to tweak these parameters.
