@@ -4,10 +4,9 @@ priv_key = [
     "0",
     "1"
 ]
-return = "1"
 # Public signals
 # "hello world" in hex
-# message = "0x68656c6c6f20776f726c64"
-# pub_key = "0x00"
-# signature = "0x00"
-# salt = "0x00"
+message = "0x00000000000000000000000000000000000000000068656c6c6f20776f726c64"
+pub_key = "0x01709a7a89797bb78a6aeb027019bf52045a858418ee5718121eb045c5ad3af4"
+signature = "0x2351d6e6b55a20f28a3cd77ba130c32c1d1787cdd4805e88da4810109a91d199"
+salt = "1"

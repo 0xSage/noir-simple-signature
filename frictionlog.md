@@ -31,6 +31,11 @@ Expected: `underflow/overflow...`
 8. Print which constraints cannot be satisfied
 Got: `could not satisfy all constraint` maybe intentionally vague? But not great for development process..
 
-9. 
+9. Not being able to console log or see outputs is hard. I configured a ts project to generate the expected pedersen hash , signature, etc values. That said, circom doesn't handle this well either. It would be killer devex to have noir CLI keep pace with opcodes, so I can just generate values on the command line.
 
+Related: when inputing hex values, it seems I have to be careful about how many significant digits. i.e. `0x0001` and `0x00000001` are equivalent, but then the proof fails. Maybe I lack understanding of some important rule here though.
 
+10. Not clear what conditions, beyond +/*, can be constrained:
+- [doesn't work] `constrain x == 0 | 1`
+- [not sure] `constrain x == 10 / 2`
+Seems to be a cool/macro thing that a DSL should handle.
