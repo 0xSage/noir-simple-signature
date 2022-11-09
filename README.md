@@ -47,3 +47,6 @@ Keep a simple [friction log](https://www.chameleon.io/blog/friction-logs) to hel
 ### Getting Started
 - Install Rust: https://www.rust-lang.org/tools/install
 - Install Noir: https://noir-lang.github.io/book/getting_started.html
+
+### Solution Attempt
+See `submission` branch
